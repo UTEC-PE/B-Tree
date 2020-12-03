@@ -7,20 +7,41 @@ template <typename T>
 class BTree {
     private:
         Node<T>* root;
-        unsigned int degree;
+        unsigned int order;
 
     public:
-        BTree(unsigned int degree) : degree(degree), root(nullptr) {};
+        // Validate the minimum order (>= 3)
+        BTree(unsigned int order) : order(order), root(nullptr) {};
 
-        T search(int k) { 
-            // TODO
-        } 
-
-        bool insert(int k, T data) {
+        bool insert(int key, T data) {
             // TODO
         }
 
-        bool remove(int k) {
+        T& operator[](int key) {
+            // TODO
+        }
+
+        bool remove(int key) {
+            // TODO
+        }
+
+        bool hasKey(int key) const {
+            // TODO
+        } 
+
+        int order() const {
+            // TODO
+        }
+
+        int size() const {
+            // TODO
+        }
+
+        int height() const {
+            // TODO
+        }
+
+        bool empty() const {
             // TODO
         }
 

@@ -8,7 +8,7 @@ using namespace std;
 template <typename T>
 class Node {
     unsigned int size;
-    vector<unsigned int> keys;
+    vector<int> keys;
     vector<Node<T>*> childs;
     bool isLeaf;
 
